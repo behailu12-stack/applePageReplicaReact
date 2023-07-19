@@ -1,0 +1,165 @@
+/* iphone.css */
+
+/* Add the following imports at the top of the file */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "~@fortawesome/fontawesome-free/css/v4-shims.css";
+
+/* iphone.css */
+
+/* General Styling */
+.internal-page-wrapper {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Title and Description */
+.title-wraper {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.brief-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Product Card */
+.card-text {
+  text-align: center;
+}
+
+.product-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 56px;
+}
+
+.product-brief {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.starting-price {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.price-range {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Learn More */
+.learn-more-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.learn-more-link {
+  margin-right: 5px;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  color: #0069d9;
+  /* font-weight: 600; */
+  font-size: 25px;
+  line-height: 1.15em;
+  letter-spacing: -0.04em;
+}
+
+.icon-right {
+  margin-left: 5px;
+  font-size: 25px;
+  color: #0069d9;
+}
+
+/* Product Image */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Media Query */
+@media (min-width: 576px) {
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .align-items-center {
+    align-items: center;
+  }
+
+  .mb-5 {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+  .justify-content-center {
+    justify-content: center;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .mt-5 {
+    margin-top: 5rem;
+  }
+
+  .my-auto {
+    margin: auto;
+  }
+
+  .product-holder {
+    height: 100%;
+  }
+
+  .col-sm-12.col-md-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .starting-price {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .monthly-price {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .product-details {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .product-image {
+    text-align: center;
+  }
+}

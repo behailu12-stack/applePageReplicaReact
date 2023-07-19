@@ -1,0 +1,88 @@
+.youtube-videos-wrapper {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.latest-videos-heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+/* This code adds a horizontal redish line after the Latest video heading using pseudo-element */
+.latest-videos-heading::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #ff5722;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-3 {
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.video-card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  object-fit: cover;
+}
+
+.video-link {
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.video-link:hover {
+  color: #ff5722;
+}
+
+.video-description {
+  color: #777777;
+  font-size: 14px;
+  height: 4.5em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .col-3 {
+    width: 50%;
+  }
+  
+  .video-description {
+    height: 3em;
+    text-overflow: ellipsis;
+  }
+}

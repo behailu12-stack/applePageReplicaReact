@@ -15,8 +15,11 @@ function Iphone() {
         }
         return res.json();
       })
-      .then((data) => setProducts(data.products))
-      .catch((error) => console.log(error));
+      .then((data) => {
+        console.log("Fetched Data:", data); // Log the fetched data for debugging
+        setProducts(data.products);
+      })
+      .catch((error) => console.log("Fetch Error:", error)); // Log any fetch errors
   }, []);
 
   return (
